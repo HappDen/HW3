@@ -4,16 +4,12 @@ fib3 = 1
 fib4 = 2
 n = int(input())
 
-if n < 2:
-    quit()
-
-for i in range(2, n):
+for i in range(0, n):
     fib1 = fib1 + fib2
     fib2 = fib1 + fib2
     fib3 = fib3 + fib4
     fib4 = fib3 + fib4
-    a = fib1 + fib2
-    b = fib3 + fib4
-    if a <= n and b >= n:
+    a = fib1
+    b = fib3
+    if a < n and b > n:
         print(b)
-    
